@@ -1,0 +1,280 @@
+div.serco > .info {
+  visibility	          : hidden;
+  position		          : relative;
+}
+
+div.serco > .info:after {
+  visibility			      : visible;
+  position				      : absolute;
+  top					          : 0;
+  left					        : 0;
+  content				        : "Serco";
+  padding				        : .5em;
+  margin-bottom			    : 1.8em;
+  background-color		  : #eceeef;
+  border				        : 1px solid #d9dddf;
+  border-radius			    : 2px;
+  background-image		  : url("https://moodleucl.uclouvain.be/question/type/serco/pix/icon.gif");
+  background-repeat		  : no-repeat;
+  background-size		    : 64px 64px;
+  background-position-x	: 15px;
+  font-weight			      : bold;
+  padding-top			      : 64px;
+  padding-left			    : 24px;
+  width					        : 96px;
+  height				        : 96px;
+}
+
+div.sercochanged {
+  background-color		  : #ff0000;
+}
+
+div.serco .formulation {
+  background-color	    : #ffffff;
+}
+
+.bootstrap-table .table > thead {
+  font-size			        : 12px;
+  padding			          : 1px;
+  line-height		        : 1.429;
+}	
+
+.bootstrap-table .table > thead > tr > th { 
+  background-color	    : #00214e;
+  color				          : white;
+  font-size			        : 12px;
+  padding			          : 1px;
+  line-height		        : 1.429;
+}
+
+
+.fixed-table-pagination .pagination-detail, .fixed-table-pagination div.pagination {
+  margin-top	          : 10px;
+  margin-bottom	        : 10px;
+  padding-left	        : 20px;
+}
+
+
+.pagination > li > a, 
+.pagination > li > span {
+  font-size		          : 12px;
+  padding		            : 2px 7px 2px 7px;
+}
+
+.fixed-table-pagination .pagination a {
+  padding               : 2px 7px 2px 7px !important;
+  line-height           : 1.0;
+  font-size             : 12px !important;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover  {
+  border		            : 1px solid #00214e;
+  background	          : #00214e;
+  color			            : #fff !important;
+  font-size		          : 12px;
+  padding		            : 2px 7px 2px 7px;
+}
+
+.pagination >li.active >.page-link,
+.pagination >li.active > a {
+  background	          : #00214e;
+  color			            : #fff !important;
+  font-size		          : 12px;
+  padding		            : 2px 7px 2px 7px;
+}
+
+.page-link {
+  color                 : #00214e !important;
+}	
+
+.fixed-table-pagination .pagination-info {
+  line-height		        : 0 !important;
+  margin-right	        : 0 !important;
+	font-size		          : 12px;
+}
+
+.fixed-table-container thead th .th-inner {
+  padding               : 2px !important;
+  line-height           : 24px;
+  vertical-align        : top;
+  overflow              : hidden;
+  text-overflow         : ellipsis;
+  white-space           : nowrap;
+}
+
+@media (max-width: 767px) {
+  div.serco > .info::after {
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "Serco";
+      padding: .0em;
+      margin-bottom: 0;
+      background-color: #eceeef;
+      border: 1px solid #d9dddf;
+      border-radius: 2px;
+      background-image: url("https://moodleucl.uclouvain.be/question/type/serco/pix/icon.gif");
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
+      background-position-x: 0px;
+      font-weight: 700;
+      padding-top: 32px;
+      padding-left: 0px;
+      width: 32px;
+      height: 32px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * CSS3 Treeview. No JavaScript
+ * @version 1.0
+ * @author Martin Ivanov
+ * @url developer's website: http://wemakesites.net/
+ * @url developer's twitter: https://twitter.com/#!/wemakesitesnet
+ * @url developer's blog http://acidmartin.wordpress.com/
+ **/
+ 
+/*
+ * This solution works with all modern browsers and Internet Explorer 9+. 
+ * If you are interested in purchasing a JavaScript enabler for IE8 
+ * for the CSS3 Treeview, please, check this link:
+ * http://experiments.wemakesites.net/miscellaneous/acidjs-css3-treeview/
+ **/
+ 
+.css-treeview ul,
+.css-treeview li
+{
+    padding   : 0;
+    margin    : 0;
+    margin-left : 15px;
+    list-style: none;
+}
+ 
+.css-treeview input
+{
+    position: absolute;
+    opacity: 0;
+}
+ 
+.css-treeview
+{
+    font: normal 11px "Segoe UI", Arial, Sans-serif;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+ 
+.css-treeview a
+{
+    //color: #00f;
+    color: #0000000;
+    text-decoration: none;
+}
+ 
+.css-treeview a:hover
+{
+    // text-decoration: underline;
+    text-decoration: none;
+}
+ 
+.css-treeview input + label + ul
+{
+    margin: 0 0 0 22px;
+}
+ 
+.css-treeview input ~ ul
+{
+    display: none;
+}
+ 
+.css-treeview label,
+.css-treeview label::before
+{
+    cursor: pointer;
+}
+ 
+.css-treeview input:disabled + label
+{
+    cursor: default;
+    opacity: .6;
+}
+ 
+.css-treeview input:checked:not(:disabled) ~ ul
+{
+    display: block;
+}
+ 
+.css-treeview label,
+.css-treeview label::before
+{
+    background: url("http://experiments.wemakesites.net/pages/css3-treeview/example/icons.png") no-repeat;
+}
+ 
+.css-treeview label,
+.css-treeview a,
+.css-treeview label::before
+{
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+ 
+.css-treeview label
+{
+    background-position: 18px 0;
+}
+ 
+.css-treeview label::before
+{
+    content: "";
+    width: 16px;
+    margin: 0 22px 0 0;
+    vertical-align: middle;
+    background-position: 0 -32px;
+}
+ 
+.css-treeview input:checked + label::before
+{
+    background-position: 0 -16px;
+}
+ 
+/* webkit adjacent element selector bugfix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+    .css-treeview 
+    {
+        -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
+    }
+ 
+    @-webkit-keyframes webkit-adjacent-element-selector-bugfix 
+    {
+        from 
+        { 
+            padding: 0;
+        } 
+        to 
+        { 
+            padding: 0;
+        }
+    }
+}
